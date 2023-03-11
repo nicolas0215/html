@@ -1,0 +1,110 @@
+body{
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url(../img/anime.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
+header{
+    background-color: rgba(250, 249, 249, 0.6);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    flex-direction: row;/*alinear horizontal*/
+    justify-content: center;
+    align-items: center;
+    /*efecto tipo glass*/
+    backdrop-filter: blur(5px);
+}
+header img{
+    padding: 15px; /*separcion horizontal por medio de px*/
+}
+nav{
+    background-color: blue;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    color:white;
+}
+nav ul{
+    padding: inline;
+    margin: 0 1px ;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 0 2px;
+}
+/* seccion de estilos CSS3 para section*/
+section{
+    width: 40%;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin: 10px auto;
+    box-shadow: inset 0 0 10px purple;
+    background-color: rgba (255,255,255,0.1);
+    backdrop-filter: blur(5px);/*efecto glass transparencia*/
+}
+form{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    border-radius: 20px;
+    margin: 10px auto;/*auto=centrar horizontalmente*/
+    box-shadow: inset 0 0 10px rgb(255, 255, 255);
+}
+fieldset{
+    border-style: none;
+}
+label{
+    font-size: 18px;
+}
+textarea{
+    resize: both;
+    max-height: 100px;
+}
+input:focus, textarea:focus{
+    border-color: blue(20,0.255);
+    cursor: pointer;/*colocs uns manito en input*/
+    box-shadow: inset 0 0 8px rgb(0, 4, 255);
+    outline: 0 none;
+}
+form button{
+    width: 40%;
+    margin: 15px 0px 20px 25px;
+    height: 40px;
+    /*color fondo en degradado circular*/
+    background: radial-gradient(teal,black);
+    color: white;
+    border-radius: 15px 15px;
+}
+/*efecto hover: pasar mouse por encima del boton*/
+form button:hover{
+    background: lightblue;
+    text-decoration: underline;
+    color: black;
+    outline: none;
+    border: 1px solid black;
+}
+form input, textarea{
+    height: 25px;
+    box-sizing: 25px;
+    border-radius: 10px ; /*para colocar bordes redondeados*/
+    color: black;
+    outline: none;/*para quitar el borde a los inputs*/
+    border: 1px solid black;
+}
+/*seccion de estilos CSS3 para footer*/
+footer{
+    font-size: 16px;
+    text-align: center;
+    color: darkorange;
+}
+
+
